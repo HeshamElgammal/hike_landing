@@ -3,7 +3,12 @@ import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import logo from "../public/logo.svg";
 import HeroImage from "../public/HeroImage.svg";
+import image2 from "../public/image2.svg";
+import image4 from "../public/image4.svg";
+import Vector2 from "../public/Vector2.svg";
+import Vector3 from "../public/Vector3.svg";
 import ImageAdv from "../public/Image.svg";
+import ImageAdvWhy from "../public/ImageWhy2.svg";
 import ri_notification_fill from "../public/ri_notification-fill.svg";
 import uim_layer_group from "../public/uim_layer-group.svg";
 import uim_schedule from "../public/uim_schedule.svg";
@@ -36,7 +41,7 @@ export default function Home() {
             <button className={styles.btnDownloadMain}>Download</button>
           </div>
         </div>
-        <div className={styles.rightHalfSection}>
+        <div className={styles.rightHalfSection1} id="imgc">
           <Image
             src={HeroImage}
             alt="Vercel Logo"
@@ -90,10 +95,16 @@ export default function Home() {
           </p>
         </div>
       </main>
+      {/* why 1 */}
       <main className={styles.main}>
         <div
           className={styles.leftHalfSection}
-          style={{ backgroundColor: "#E6F8F8" }}
+          style={{
+            backgroundColor: "#E6F8F8",
+            overflow: "hidden",
+            borderTopRightRadius: "60px",
+            borderBottomRightRadius: "60px",
+          }}
         >
           <Image
             src={ImageAdv}
@@ -104,10 +115,19 @@ export default function Home() {
         </div>
         <div
           className={styles.rightHalfSection}
-          style={{ backgroundColor: "#ffff",alignItems:"flex-start",paddingLeft:"3%" }}
+          style={{
+            backgroundColor: "#fffff",
+            alignItems: "flex-start",
+            paddingLeft: "3%",
+            height: "100%",
+            display: "flex",
+          }}
         >
           <div className={styles.containerLeftSection}>
-            <p className={styles.title1InCOntainerLeftSec}>
+            <p
+              className={styles.title1InCOntainerLeftSec}
+              style={{ fontSize: "2rem" }}
+            >
               Deal & Offers at your finguretips just @Hike
             </p>
             <p className={styles.title2IncontainerLeftSec}>
@@ -115,12 +135,114 @@ export default function Home() {
               manage and certainly no longer lagging behind schedule of
               activities and task
             </p>
-            <div style={{flexDirection:"row"}}>
-            <button className={styles.btnDownloadMain} style={{mar}}>Download</button>
-            <button className={styles.btnDownloadMain}>Download</button>
-
+            <div style={{ flexDirection: "row", width: "100%" }}>
+              <button
+                className={styles.btnDownloadMain}
+                style={{ marginRight: "2%", marginBottom: "2%" }}
+              >
+                Download
+              </button>
+              <button className={styles.btnDownloadMain}>Download</button>
             </div>
           </div>
+        </div>
+      </main>
+      {/* why 2 */}
+      <main className={styles.main} style={{ marginTop: "2vh" }}>
+        <div className={styles.leftHalfSection}>
+          <div className={styles.containerLeftSection}>
+            <p className={styles.title1InCOntainerLeftSec}>
+              Stores listing that have heavy discounts.
+            </p>
+            <p className={styles.title2IncontainerLeftSec}>
+              The best feature makes you better, with the latest technology to
+              meet your needs. Of course, with such features as organizing
+              schedules and leading assignments, it will make you easier, So get
+              the application now !
+            </p>
+            <div style={{ flexDirection: "row", width: "100%" }}>
+              <Image
+                className={styles.btnDownloadMain}
+                src={image2}
+                alt="Vercel Logo"
+                width={"100%"}
+                height={"100%"}
+                style={{
+                  backgroundColor: "transparent",
+                  border: 0,
+                  borderRadius: 0,
+                }}
+              />
+              <Image
+                className={styles.btnDownloadMain}
+                style={{
+                  backgroundColor: "transparent",
+                  border: 0,
+                  borderRadius: 0,
+                }}
+                src={image4}
+                alt="Vercel Logo"
+                width={"100%"}
+                height={"100%"}
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          className={styles.rightHalfSection}
+          style={{
+            backgroundColor: "#E6F8F8",
+            overflow: "hidden",
+            borderTopLeftRadius: "60px",
+            borderBottomLeftRadius: "60px",
+          }}
+        >
+          <Image
+            src={ImageAdvWhy}
+            alt="Vercel Logo"
+            width={"100%"}
+            height={"100%"}
+          />
+        </div>
+      </main>
+      <main className={styles.containerCenterWhatsCall}>
+        <div className={styles.titleContainer}>
+          <p className={styles.titleInCWC}>
+            Download an app now and the various benefits you will get
+            immediately
+          </p>
+        </div>
+        <div className={styles.containerBtnWC}>
+          <button
+            // className={styles.btnDownloadMain}
+            className={styles.btnWhats}
+          >
+            <Image
+              src={Vector2}
+              alt="Vercel Logo"
+              width={"100%"}
+              height={"100%"}
+              style={{
+                marginRight: "3px",
+              }}
+            />
+            Whatsapp
+          </button>
+          <button
+            // className={styles.}
+            className={styles.btnCall}
+          >
+            <Image
+              src={Vector3}
+              alt="Vercel Logo"
+              width={"100%"}
+              height={"100%"}
+              style={{
+                marginRight: "3px",
+              }}
+            />
+            Call Now
+          </button>
         </div>
       </main>
       <footer className={styles.footer}>©2022 Hike App</footer>

@@ -64,8 +64,23 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
-  /* background-color: #C4E8E8; */
+  /* background-color: #01B1B9; */
   overflow: hidden;
+
+  /* height: 50%; */
+}
+
+.rightHalfSection1 {
+  flex: 1;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  /* background-color: #01B1B9; */
+  overflow: hidden;
+  /* height: 50%; */
+  border-bottom-left-radius: 3rem;
 }
 
 .leftHalfSection {
@@ -92,8 +107,8 @@
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 600;
-  font-size: 64px;
-  line-height: 85px;
+  font-size: 3rem;
+  line-height: 3rem;
   /* or 133% */
   color: #212121;
 }
@@ -104,8 +119,8 @@
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 36px;
+  font-size: 1rem;
+  line-height: 1rem;
   /* or 200% */
   color: #747474;
 }
@@ -146,6 +161,7 @@
   justify-content: center;
   flex-direction: column;
 }
+
 .imgBg {
   /* padding: 10px; */
   /* background-color: #C4E8E8; */
@@ -161,7 +177,8 @@
   justify-content: center;
   margin-bottom: 30px;
 }
-.title1Card{
+
+.title1Card {
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 700;
@@ -170,7 +187,8 @@
   /* or 133% */
   color: #212121;
 }
-.title2Card{
+
+.title2Card {
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 400;
@@ -179,6 +197,89 @@
   /* or 200% */
   color: #747474;
 }
+
+.containerCenterWhatsCall {
+
+  width: 70%;
+  align-self: center;
+  background-color: #00A3B9;
+  height: 15rem;
+  margin-left: 15%;
+  border-radius: 2rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+
+}
+.titleContainer {
+  max-height: 30vh;
+  max-width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  /* background-color: #212121; */
+}
+.titleInCWC {
+  font-size: 1.8rem;
+  color: #ffff;
+  text-align: center;
+  /* max-width: 70%; */
+  /* // marginTop: 3%; */
+}
+
+.containerBtnWC {
+  flex-direction: row;
+  width: 50%;
+  justify-content: center;
+  /* // background-color: #f00; */
+  align-items: center;
+  display: flex;
+
+}
+
+.btnWhats {
+  margin-right: 3%;
+  background-color: #28D045;
+  border-color: #28D045;
+  border-width: 0.5;
+  flex-direction: row;
+  align-items: center;
+  width: 150px;
+  height: 50px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 27px;
+  /* identical to box height */
+  color: #ffff;
+  border-radius: 20px;
+  border: 2px solid #28D045;
+  /* background-color: #00A3B9; */
+}
+
+.btnCall {
+
+  background-color: transparent;
+  border-color: #fff;
+  border-width: 0.5;
+  flex-direction: row;
+  align-items: center;
+  width: 150px;
+  height: 50px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 27px;
+  /* identical to box height */
+  color: #ffff;
+  border-radius: 20px;
+  border: 2px solid;
+}
+
 .footer {
   display: flex;
   flex: 1;
@@ -215,45 +316,9 @@
   font-size: 4rem;
 }
 
-.title,
-.description {
-  text-align: center;
-}
 
-.description {
-  margin: 4rem 0;
-  line-height: 1.5;
-  font-size: 1.5rem;
-}
 
-.code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
-}
 
-.grid {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 800px;
-}
-
-.card {
-  margin: 1rem;
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 300px;
-}
 
 .card:hover,
 .card:focus,
@@ -262,26 +327,93 @@
   border-color: #0070f3;
 }
 
-.card h2 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
-}
-
-.card p {
-  margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
-}
-
-.logo {
-  height: 1em;
-  margin-left: 0.5rem;
-}
 
 @media (max-width: 600px) {
-  .grid {
+  .main {
     width: 100%;
     flex-direction: column;
+  }
+
+  .rightHalfSection {
+    width: 100%;
+    align-items: flex-start;
+    padding-left: 0%;
+    border-bottom-left-radius: 0rem;
+
+  }
+
+  .rightHalfSection1 {
+    width: 100%;
+    align-items: flex-start;
+    padding-left: 0%;
+    background-color: #EEF4FF;
+
+    border-bottom-left-radius: 0rem;
+
+  }
+
+  .leftHalfSection {
+    width: 100%;
+    align-items: flex-start;
+
+  }
+
+  .containerLeftSection {
+    width: 95%;
+    margin-left: 2%;
+  }
+
+  .featuresContainer {
+    margin-bottom: 10vh;
+    align-items: center;
+    margin-left: 10%;
+
+  }
+
+  .cardContianer {
+    width: 90%;
+    align-items: center;
+    text-align: center;
+    /* background-color: #0070f3; */
+  }
+
+  .imgBg {
+    /* border-radius: 0%; */
+    /* background: #C4E8E8; */
+  }
+
+  .containerBtnWC {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10%;
+  }
+
+  .titleContainer {
+    max-height: 30vh;
+    /* width: 100%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .containerCenterWhatsCall {
+    height: 90vh;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 15%;
+  }
+
+  .btnWhats {
+    margin-top: 15%;
+    margin-bottom:5%;
+  }
+  .title1InCOntainerLeftSec {
+   
+   
+    font-size: 2rem;
+    line-height: 2rem;
+
   }
 }
 
