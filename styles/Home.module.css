@@ -1,7 +1,6 @@
 .container {
   padding: 0;
   margin: 0;
-
 }
 
 .header {
@@ -22,20 +21,21 @@
   flex-direction: row;
   justify-content: space-between;
   align-self: center;
+  align-items: "center";
 }
 
 .btnHeader {
   width: 150px;
   height: 40px;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 27px;
   /* identical to box height */
-  color: #00A3B9;
+  color: #00a3b9;
   border-radius: 20px;
-  border: 2px solid #00A3B9;
+  border: 2px solid #00a3b9;
   /* background-color: transparent; */
 }
 
@@ -43,7 +43,7 @@
   width: 70px;
   height: 40px;
   border-radius: 10px;
-  background: #00A3B9;
+  background: #00a3b9;
 }
 
 .main {
@@ -91,7 +91,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
 }
 
 .containerLeftSection {
@@ -104,7 +103,7 @@
 }
 
 .title1InCOntainerLeftSec {
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
   font-size: 3rem;
@@ -113,10 +112,8 @@
   color: #212121;
 }
 
-
-
 .title2IncontainerLeftSec {
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
   font-size: 1rem;
@@ -128,7 +125,7 @@
 .btnDownloadMain {
   width: 150px;
   height: 50px;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -136,8 +133,8 @@
   /* identical to box height */
   color: #ffff;
   border-radius: 20px;
-  border: 2px solid #00A3B9;
-  background-color: #00A3B9;
+  border: 2px solid #00a3b9;
+  background-color: #00a3b9;
 }
 
 .featuresContainer {
@@ -165,7 +162,7 @@
 .imgBg {
   /* padding: 10px; */
   /* background-color: #C4E8E8; */
-  background: #EEF4FF;
+  background: #eef4ff;
 
   border-radius: 16px;
   border: 1px solid transparent;
@@ -179,7 +176,7 @@
 }
 
 .title1Card {
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 700;
   font-size: 25px;
@@ -189,7 +186,7 @@
 }
 
 .title2Card {
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -199,10 +196,9 @@
 }
 
 .containerCenterWhatsCall {
-
   width: 70%;
   align-self: center;
-  background-color: #00A3B9;
+  background-color: #00a3b9;
   height: 15rem;
   margin-left: 15%;
   border-radius: 2rem;
@@ -210,7 +206,6 @@
   align-items: center;
   flex-direction: column;
   justify-content: center;
-
 }
 .titleContainer {
   max-height: 30vh;
@@ -236,19 +231,18 @@
   /* // background-color: #f00; */
   align-items: center;
   display: flex;
-
 }
 
 .btnWhats {
   margin-right: 3%;
-  background-color: #28D045;
-  border-color: #28D045;
+  background-color: #28d045;
+  border-color: #28d045;
   border-width: 0.5;
   flex-direction: row;
   align-items: center;
   width: 150px;
   height: 50px;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
   font-size: 1.2rem;
@@ -256,12 +250,11 @@
   /* identical to box height */
   color: #ffff;
   border-radius: 20px;
-  border: 2px solid #28D045;
+  border: 2px solid #28d045;
   /* background-color: #00A3B9; */
 }
 
 .btnCall {
-
   background-color: transparent;
   border-color: #fff;
   border-width: 0.5;
@@ -269,7 +262,7 @@
   align-items: center;
   width: 150px;
   height: 50px;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
   font-size: 1.2rem;
@@ -285,9 +278,9 @@
   flex: 1;
   justify-content: center;
   align-items: center;
-  Fill: Solid #F9F9F9;
+  fill: Solid #f9f9f9;
   height: 65px;
-  background-color: #F9F9F9;
+  background-color: #f9f9f9;
   margin-top: 10px;
 }
 
@@ -296,7 +289,6 @@
   justify-content: center;
   align-items: center;
   flex-grow: 1;
-
 }
 
 .title a {
@@ -316,10 +308,6 @@
   font-size: 4rem;
 }
 
-
-
-
-
 .card:hover,
 .card:focus,
 .card:active {
@@ -327,11 +315,13 @@
   border-color: #0070f3;
 }
 
-
 @media (max-width: 600px) {
   .main {
     width: 100%;
-    flex-direction: column;
+    flex-direction: column-reverse;
+  }
+  .titleHeader {
+    display: none;
   }
 
   .rightHalfSection {
@@ -339,23 +329,20 @@
     align-items: flex-start;
     padding-left: 0%;
     border-bottom-left-radius: 0rem;
-
   }
 
   .rightHalfSection1 {
     width: 100%;
     align-items: flex-start;
     padding-left: 0%;
-    background-color: #EEF4FF;
+    background-color: #eef4ff;
 
     border-bottom-left-radius: 0rem;
-
   }
 
   .leftHalfSection {
     width: 100%;
     align-items: flex-start;
-
   }
 
   .containerLeftSection {
@@ -367,7 +354,6 @@
     margin-bottom: 10vh;
     align-items: center;
     margin-left: 10%;
-
   }
 
   .cardContianer {
@@ -402,19 +388,15 @@
   .btnWhats {
     margin-right: 0%;
     margin-top: 15%;
-    margin-bottom:5%;
+    margin-bottom: 5%;
   }
   .title1InCOntainerLeftSec {
-   
-   
     font-size: 2rem;
     line-height: 2rem;
-
   }
 }
 
 @media (prefers-color-scheme: dark) {
-
   .card,
   .footer {
     border-color: #222;

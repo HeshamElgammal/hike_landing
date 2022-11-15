@@ -6,6 +6,7 @@ import HeroImage from "../public/HeroImage.svg";
 import image2 from "../public/image2.svg";
 import image4 from "../public/image4.svg";
 import Vector2 from "../public/Vector2.svg";
+import Group10 from "../public/Group10.svg";
 import Vector3 from "../public/Vector3.svg";
 import ImageAdv from "../public/Image.svg";
 import ImageAdvWhy from "../public/ImageWhy2.svg";
@@ -24,10 +25,37 @@ export default function Home() {
       <header className={styles.header}>
         <div className={styles.navbar}>
           <Image src={logo} alt="Vercel Logo" width={100} height={40} />
-          <button className={styles.btnHeader}>Download</button>
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "row",
+              alignItems: "center",
+              marginTop:"-10px"
+            }}
+          >
+            <Image
+              src={Group10}
+              alt="Vercel Logo"
+              width={150}
+              height={50}
+              color="#000"
+            />
+            <p
+            className={styles.titleHeader}
+              style={{
+                position: "absolute",
+                fontSize: ".65rem",
+                top: "9px",
+                right: "25.5px",
+              }}
+            >
+              We are online
+            </p>
+          </div>
+          {/* <button className={styles.btnHeader}>Download</button> */}
         </div>
       </header>
-      <main className={styles.main}>
+      {/* <main className={styles.main}>
         <div className={styles.leftHalfSection}>
           <div className={styles.containerLeftSection}>
             <p className={styles.title1InCOntainerLeftSec}>
@@ -49,9 +77,9 @@ export default function Home() {
             height={"100%"}
           />
         </div>
-      </main>
+      </main> */}
       {/* features */}
-      <main className={styles.featuresContainer}>
+      {/* <main className={styles.featuresContainer}>
         <div className={styles.cardContianer}>
           <div className={styles.imgBg}>
             <Image
@@ -94,9 +122,9 @@ export default function Home() {
             Of course you will always get the tasks and schedule notifications
           </p>
         </div>
-      </main>
+      </main> */}
       {/* why 1 */}
-      <main className={styles.main}>
+      {/* <main className={styles.main}>
         <div
           className={styles.leftHalfSection}
           style={{
@@ -146,7 +174,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </main>
+      </main> */}
       {/* why 2 */}
       <main className={styles.main} style={{ marginTop: "2vh" }}>
         <div className={styles.leftHalfSection}>
@@ -205,7 +233,7 @@ export default function Home() {
           />
         </div>
       </main>
-      <main className={styles.containerCenterWhatsCall}>
+      {/* <main className={styles.containerCenterWhatsCall}>
         <div className={styles.titleContainer}>
           <p className={styles.titleInCWC}>
             Download an app now and the various benefits you will get
@@ -244,7 +272,7 @@ export default function Home() {
             Call Now
           </button>
         </div>
-      </main>
+      </main> */}
       <footer className={styles.footer}>©2022 Hike App</footer>
     </div>
   );
