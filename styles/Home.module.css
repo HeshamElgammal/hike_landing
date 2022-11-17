@@ -47,13 +47,13 @@
 }
 
 .main {
-  min-height: 100vh;
+  min-height: 85vh;
   flex: 1;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
-  margin-top: -100px;
+  align-items: flex-start;
+  margin-top: -10px;
   /* background-color: #f00; */
 }
 
@@ -64,9 +64,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
-  /* background-color: #01B1B9; */
+  background-color: #d5eff2;
   overflow: hidden;
-
+  border-top-left-radius: 60px;
+  border-bottom-left-radius: 60px;
   /* height: 50%; */
 }
 
@@ -124,7 +125,7 @@
 
 .btnDownloadMain {
   width: 150px;
-  height: 50px;
+  height: 45px;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
@@ -207,6 +208,7 @@
   flex-direction: column;
   justify-content: center;
 }
+
 .titleContainer {
   max-height: 30vh;
   max-width: 70%;
@@ -214,8 +216,10 @@
   align-items: center;
   justify-content: center;
   text-align: center;
+
   /* background-color: #212121; */
 }
+
 .titleInCWC {
   font-size: 1.8rem;
   color: #ffff;
@@ -320,6 +324,7 @@
     width: 100%;
     flex-direction: column-reverse;
   }
+
   .titleHeader {
     display: none;
   }
@@ -328,7 +333,19 @@
     width: 100%;
     align-items: flex-start;
     padding-left: 0%;
-    border-bottom-left-radius: 0rem;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    background-color: #d5eff2;
+    overflow: hidden;
+    
+  }
+
+  .ImageAdvWhy {
+    height: 50px;
+    object-fit: contain;
+
+    position: relative;
+    height: unset;
   }
 
   .rightHalfSection1 {
@@ -347,7 +364,12 @@
 
   .containerLeftSection {
     width: 95%;
-    margin-left: 2%;
+    margin-left: 5%;
+  }
+
+  .btnDownloadMain {
+    width: 45%;
+    height: 35px;
   }
 
   .featuresContainer {
@@ -390,6 +412,7 @@
     margin-top: 15%;
     margin-bottom: 5%;
   }
+
   .title1InCOntainerLeftSec {
     font-size: 2rem;
     line-height: 2rem;
@@ -397,6 +420,7 @@
 }
 
 @media (prefers-color-scheme: dark) {
+
   .card,
   .footer {
     border-color: #222;
