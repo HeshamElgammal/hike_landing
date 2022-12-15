@@ -1,4 +1,4 @@
-export default privacyData = [
+const  privacyData = [
   {
     selected: false,
     header: "1. Data Controller",
@@ -150,3 +150,5 @@ export default privacyData = [
     `,
   },
 ];
+
+export default privacyData
