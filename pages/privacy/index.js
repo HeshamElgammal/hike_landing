@@ -5,7 +5,7 @@ import styles from "../../styles/Home.module.css";
 import Group10 from "../../public/whatsapp.svg";
 import plus from "../../public/plus.svg";
 import multi from "../../public/multi.svg";
-import { privacyData } from "../../assets/privacyData";
+import privacyData from "../../assets/privacyData";
 
 const Privacy = () => {
   const [pivaciesData, setPData] = useState(privacyData);
