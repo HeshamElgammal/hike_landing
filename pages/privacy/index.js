@@ -34,6 +34,7 @@ const Privacy = () => {
               borderLeft: "0",
               borderRight: "0",
             }}
+            key={`hello - ${index}`}
           >
             <div
               style={{
