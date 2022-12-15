@@ -2,23 +2,22 @@ import React, { useEffect, useMemo, useState } from "react";
 import Image from "next/image";
 
 import styles from "../../styles/Home.module.css";
-import logo from "../../public/logo.svg";
 import Group10 from "../../public/whatsapp.svg";
 import plus from "../../public/plus.svg";
 import multi from "../../public/multi.svg";
 import { privacyData } from "./privacyData";
 
 const Privacy = () => {
-  const [pData, setPData] = useState(privacyData);
+  const [pivaciesData, setPData] = useState(privacyData);
   const toggleItem = (index) => {
-    let newP = [...pData];
+    let newP = [...pivaciesData];
     newP[index].selected = !newP[index].selected;
     setPData(newP);
   };
   const source = useMemo(
     () => (
       <>
-        {pData.map((item, index) => (
+        {pivaciesData?.map((item, index) => (
           <div
             style={{
               display: "flex",
@@ -89,7 +88,7 @@ const Privacy = () => {
         ))}
       </>
     ),
-    [setPData, toggleItem, pData]
+    [setPData, toggleItem, pivaciesData]
   );
   return (
     <>
