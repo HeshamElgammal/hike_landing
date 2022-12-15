@@ -10,7 +10,7 @@ import image2 from "../public/image2.svg";
 import image4 from "../public/image4.svg";
 import Group10 from "../public/whatsapp.svg";
 import ImageAdvWhy from "../public/ImageWhy2.svg";
-import { titles } from "./titles";
+import titles from "../assets/titles";
 export default function Home() {
   const router = useRouter();
   return (
