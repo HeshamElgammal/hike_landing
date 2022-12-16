@@ -234,7 +234,7 @@ const Privacy = () => {
           style={{
             width: "50%",
             height: "50px",
-            backgroundColor: "#ccc",
+            backgroundColor: selectedTab=="privacy"?"#ccc":"#eee",
 
             display: "flex",
             justifyContent: "center",
@@ -259,7 +259,7 @@ const Privacy = () => {
           style={{
             width: "50%",
             height: "50px",
-            backgroundColor: "#eee",
+            backgroundColor: selectedTab=="terms"?"#ccc":"#eee",
             display: "flex",
             justifyContent: "center",
             flexDirection: "row",
