@@ -10,6 +10,8 @@ import termss from "../../assets/terms";
 
 const Privacy = () => {
   const [pivaciesData, setPData] = useState(privacyData);
+  const [termsData, setTermsData] = useState(termss);
+
   const [selectedTab, setSelectedTab] = useState("privacy");
   const toggleItem = (index) => {
     let newP = [...pivaciesData];
@@ -96,7 +98,7 @@ const Privacy = () => {
   const terms = useMemo(
     () => (
       <>
-        {termss?.map((item, index) => (
+        {termsData?.map((item, index) => (
           <div
             style={{
               display: "flex",
