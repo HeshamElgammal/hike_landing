@@ -18,6 +18,11 @@ const Privacy = () => {
     newP[index].selected = !newP[index].selected;
     setPData(newP);
   };
+  const toggleTermItem = (index) => {
+    let newP = [...termsData];
+    newP[index].selected = !newP[index].selected;
+    setTermsData(newP);
+  };
   const source = useMemo(
     () => (
       <>
@@ -149,7 +154,7 @@ const Privacy = () => {
                 height={30}
                 style={{ display: "flex" }}
                 onClick={() => {
-                  toggleItem(index);
+                  toggleTermItem(index);
                 }}
               />
             </div>
@@ -299,6 +304,8 @@ const Privacy = () => {
                   fontWeight: "600",
                   color: "#000",
                   marginBottom: "20px",
+                  marginTop: "20px",
+
                 }}
               >
                 Hike Privacy Policy
@@ -365,6 +372,7 @@ const Privacy = () => {
                   fontWeight: "600",
                   color: "#000",
                   marginBottom: "20px",
+                  marginTop: "20px",
                 }}
               >
                 Customer Agreement (Hike)
