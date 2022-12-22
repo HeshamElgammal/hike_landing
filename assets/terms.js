@@ -269,11 +269,6 @@ For "Money Transfer" transactions, this Agreement applies individually to each t
     26.6 Which laws apply to this Agreement and where you may bring legal proceedings. This Agreement is governed by Lebanese law. Any dispute between you and us in connection with your Hike Account and/or this Agreement may be brought in the courts of the Lebanese Republic.
     `
   },
-  {
-    selected:false,
-    header:'',
-    body:``
-  },
 ];
 
 export default termss;

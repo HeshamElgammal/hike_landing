@@ -196,7 +196,7 @@ const Privacy = () => {
             <Image
               src={Group10}
               alt="Vercel Logo"
-              height={50}
+              height={60}
               color="#000"
               style={{
                 backgroundColor: "#28D045",
@@ -241,7 +241,7 @@ const Privacy = () => {
           style={{
             width: "50%",
             height: "50px",
-            backgroundColor: selectedTab=="privacy"?"#ccc":"#eee",
+            backgroundColor: selectedTab == "privacy" ? "#ccc" : "#eee",
 
             display: "flex",
             justifyContent: "center",
@@ -266,7 +266,7 @@ const Privacy = () => {
           style={{
             width: "50%",
             height: "50px",
-            backgroundColor: selectedTab=="terms"?"#ccc":"#eee",
+            backgroundColor: selectedTab == "terms" ? "#ccc" : "#eee",
             display: "flex",
             justifyContent: "center",
             flexDirection: "row",
@@ -305,7 +305,6 @@ const Privacy = () => {
                   color: "#000",
                   marginBottom: "20px",
                   marginTop: "20px",
-
                 }}
               >
                 Hike Privacy Policy

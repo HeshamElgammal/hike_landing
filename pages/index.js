@@ -53,7 +53,7 @@ export default function Home() {
             <Image
               src={Group10}
               alt="Vercel Logo"
-              height={50}
+              height={60}
               color="#000"
               style={{
                 backgroundColor: "#28D045",
