@@ -82,7 +82,7 @@ export default function Home() {
       </header>
 
       {/* why 2 */}
-      <main className={styles.main} style={{ marginTop: "4vh" }}>
+      <main className={styles.main} style={{ marginTop: "1vh" }}>
         <div className={styles.leftHalfSection}>
           <div className={styles.containerLeftSection}>
             <p className={styles.title1InCOntainerLeftSec}>{titles.header}.</p>
@@ -125,14 +125,14 @@ export default function Home() {
             src={ImageAdvWhy}
             alt="Vercel Logo"
             className={styles.ImageAdvWhy}
-            style={{ objectFit: "scale-down" }}
-            layout="fill"
-            objectFit="cover"
+            style={{ width: "95%", height: "auto",objectFit:"cover",alignSelf:"flex-end" }}
+            // layout="fill"
+            // objectFit="cover"
           />
         </div>
       </main>
       <footer className={styles.footer}>
-        {titles.footer} 
+        {titles.footer}
         <button
           style={{
             border: "0",
@@ -148,16 +148,16 @@ export default function Home() {
             router.push("/privacy");
           }}
         >
+          <h6
+            style={{
+              fontSize: "1rem",
+              // textUnderlinePosition:'under',
 
-          <h6 style={{
-            fontSize:"1rem",
-            // textUnderlinePosition:'under',
-
-            textDecorationLine:"underline",
-            marginTop:"1vh"
-          }}>
-          Terms of use and Privacy Policy
-
+              textDecorationLine: "underline",
+              marginTop: "1vh",
+            }}
+          >
+            Terms of use and Privacy Policy
           </h6>
         </button>
       </footer>
