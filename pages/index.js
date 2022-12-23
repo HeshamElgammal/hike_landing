@@ -132,25 +132,33 @@ export default function Home() {
         </div>
       </main>
       <footer className={styles.footer}>
-        {titles.footer} ,
+        {titles.footer} 
         <button
           style={{
             border: "0",
-            textUnderlinePosition: "under",
-            textUnderlineOffset: "1",
             display: "flex",
             alignItems: "center",
             justifyContent: "end",
             backgroundColor: "transparent",
-            borderBottomWidth: 1,
-            borderStyle: "solid",
-            borderBlockColor: "#000",
+            // borderBottomWidth: 1,
+            // borderStyle: "solid",
+            // borderBlockColor: "#000",
           }}
           onClick={() => {
             router.push("/privacy");
           }}
         >
-          {"\t     "} Terms of use and Privacy Policy
+
+          <h6 style={{
+            fontSize:"1rem",
+            // textUnderlinePosition:'under',
+
+            textDecorationLine:"underline",
+            marginTop:"1vh"
+          }}>
+          Terms of use and Privacy Policy
+
+          </h6>
         </button>
       </footer>
     </motion.div>

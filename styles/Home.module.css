@@ -295,6 +295,7 @@
   height: 65px;
   background-color: #f9f9f9;
   margin-top: 10px;
+ 
 }
 
 .footer a {
@@ -302,6 +303,8 @@
   justify-content: center;
   align-items: center;
   flex-grow: 1;
+  flex-direction: column;
+
 }
 
 .title a {
@@ -426,6 +429,9 @@
   .title1InCOntainerLeftSec {
     font-size: 2rem;
     line-height: 2rem;
+  }
+  .footer{
+    flex-direction: column;
   }
 }
 

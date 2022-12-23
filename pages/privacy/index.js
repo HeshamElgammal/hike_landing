@@ -267,23 +267,24 @@ const Privacy = () => {
 
               display: "flex",
               justifyContent: "center",
-              flexDirection: "row",
+              flexDirection: "column",
               alignItems: "center",
             }}
             onClick={() => {
               setSelectedTab("privacy");
             }}
           >
-            <p
+            <h6
               style={{
-                marginTop: ".9rem",
-                fontSize: "1.1rem",
-                fontWeight: "500",
-                color: "#111",
+                // backgroundColor:"#f00",
+                fontSize: "1rem",
+                // marginTop: "1rem",
+                color: "#000",
+                textAlign:"center"
               }}
             >
               Privacy Policy
-            </p>
+            </h6>
           </div>
           <div
             style={{
@@ -292,23 +293,27 @@ const Privacy = () => {
               backgroundColor: selectedTab == "terms" ? "#ccc" : "#eee",
               display: "flex",
               justifyContent: "center",
-              flexDirection: "row",
+              flexDirection: "column",
               alignItems: "center",
+              
             }}
             onClick={() => {
               setSelectedTab("terms");
             }}
           >
-            <p
+            <h6
               style={{
-                marginTop: ".9rem",
-                fontSize: "1.1rem",
-                fontWeight: "500",
-                color: "#111",
+                fontSize: "1rem",
+                // marginTop: "1rem",
+                color: "#000",
+                // backgroundColor:"#f00",
+                alignSelf:"center",
+        textAlign:"center"
+// width:'0'
               }}
             >
               Terms & Conditions
-            </p>
+            </h6>
           </div>
         </div>
         {selectedTab == "privacy" && (
