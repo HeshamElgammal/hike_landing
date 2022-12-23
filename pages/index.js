@@ -125,7 +125,7 @@ export default function Home() {
             src={ImageAdvWhy}
             alt="Vercel Logo"
             className={styles.ImageAdvWhy}
-            style={{ width: "95%", height: "auto",objectFit:"cover",alignSelf:"flex-end" }}
+            style={{ width: "95%", height: "auto",objectFit:"cover",alignSelf:"flex-end",zIndex:100000 }}
             // layout="fill"
             // objectFit="cover"
           />
