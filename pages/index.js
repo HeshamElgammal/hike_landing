@@ -38,7 +38,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <header style={{backgroundColor:"#fefefe"}} className={styles.header}>
+      <header style={{ backgroundColor: "#fefefe" }} className={styles.header}>
         <div className={styles.navbar}>
           <Image src={logo} alt="Vercel Logo" width={120} height={60} />
           <a
@@ -132,7 +132,7 @@ export default function Home() {
         </div>
       </main>
       <footer className={styles.footer}>
-        {titles.footer}
+        {titles.footer} ,
         <button
           style={{
             border: "0",
@@ -140,14 +140,17 @@ export default function Home() {
             textUnderlineOffset: "1",
             display: "flex",
             alignItems: "center",
-            justifyContent: "center",
+            justifyContent: "end",
             backgroundColor: "transparent",
+            borderBottomWidth: 1,
+            borderStyle: "solid",
+            borderBlockColor: "#000",
           }}
           onClick={() => {
             router.push("/privacy");
           }}
         >
-          {"\t   "}privacy
+          {"\t     "} Terms of use and Privacy Policy
         </button>
       </footer>
     </motion.div>
