@@ -38,9 +38,9 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <header className={styles.header}>
+      <header style={{backgroundColor:"#fefefe"}} className={styles.header}>
         <div className={styles.navbar}>
-          <Image src={logo} alt="Vercel Logo" width={100} height={40} />
+          <Image src={logo} alt="Vercel Logo" width={120} height={60} />
           <a
             style={{
               display: "flex",
@@ -82,7 +82,7 @@ export default function Home() {
       </header>
 
       {/* why 2 */}
-      <main className={styles.main} style={{ marginTop: "0vh" }}>
+      <main className={styles.main} style={{ marginTop: "4vh" }}>
         <div className={styles.leftHalfSection}>
           <div className={styles.containerLeftSection}>
             <p className={styles.title1InCOntainerLeftSec}>{titles.header}.</p>
